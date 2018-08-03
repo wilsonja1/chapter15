@@ -24,6 +24,11 @@ namespace chapter15
     {
         public MainPage()
         {
+            Ball ball = new Ball();
+            Pitcher pitcher = new Pitcher(ball);
+            BallEventArgs ballEventArgs = new BallEventArgs(50);
+            ball.OnBallInPlay(BallEventArgs);
+
             this.InitializeComponent();
         }
     }
