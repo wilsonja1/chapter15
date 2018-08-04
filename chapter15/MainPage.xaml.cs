@@ -27,7 +27,7 @@ namespace chapter15
             Ball ball = new Ball();
             Pitcher pitcher = new Pitcher(ball);
             BallEventArgs ballEventArgs = new BallEventArgs(50);
-            ball.OnBallInPlay(BallEventArgs);
+            ball.OnBallInPlay(ballEventArgs);
 
             this.InitializeComponent();
         }
